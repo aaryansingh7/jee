@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Preparation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to JEE Preparation</h1>
+        <nav>
+            <ul>
+                <li><a href="#live-lectures">Live Lectures</a></li>
+                <li><a href="#videos">Pre-recorded Videos</a></li>
+                <li><a href="#study-material">Study Material</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#forum">Community Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="live-lectures">
+            <h2>Live Lectures</h2>
+            <!-- Embed live lecture here -->
+            <p>Live lectures will be embedded here.</p>
+        </section>
+        <section id="videos">
+            <h2>Pre-recorded Videos</h2>
+            <!-- Video content here -->
+            <p>Pre-recorded videos will be listed here.</p>
+        </section>
+        <section id="study-material">
+            <h2>Chapter-wise Study Material</h2>
+            <!-- Study material links here -->
+            <p>Study materials will be available here.</p>
+        </section>
+        <section id="quizzes">
+            <h2>Quizzes</h2>
+            <!-- Quiz functionality here -->
+            <p>Practice quizzes will be available here.</p>
+        </section>
+        <section id="forum">
+            <h2>Community Forum</h2>
+            <!-- Forum link or integration here -->
+            <p>Community forum will be integrated here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JEE Preparation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}// Example: Smooth scrolling for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
